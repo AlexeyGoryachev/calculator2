@@ -20,10 +20,10 @@ public class Calculator2Service {
         }
     }
     public int divide(int num1, int num2) {
-        if (num2 == 0) {
-            throw new IllegalArgumentException("на ноль делить нельзя");
-        } else if (num1 == 0) {
-            throw new IllegalArgumentException("ноль нельзя разделить");
+        if (num1 == 0) {
+            throw new IllegalArgumentException("ноль делить нельзя");
+        } else if (num2 == 0) {
+            throw new IllegalArgumentException("на ноль нельзя разделить");
         } else {
             return num1 / num2;
         }

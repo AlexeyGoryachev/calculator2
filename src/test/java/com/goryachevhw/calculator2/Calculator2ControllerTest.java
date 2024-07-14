@@ -35,8 +35,8 @@ public class Calculator2ControllerTest {
         when(calculator2Service.divide(3, 3)).thenReturn(1);
         when(calculator2Service.divide(-3, 3)).thenReturn(-1);
         when(calculator2Service.divide(-3, -3)).thenReturn(1);
-        when(calculator2Service.divide(3, 0)).thenThrow(new IllegalArgumentException("на ноль нельзя разделить"));
         when(calculator2Service.divide(0, 3)).thenThrow(new IllegalArgumentException("ноль нельзя разделить"));
+        when(calculator2Service.divide(3, 0)).thenThrow(new IllegalArgumentException("на ноль нельзя разделить"));
     }
     @Test
     public void testWelcome() throws Exception {
